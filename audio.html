@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+        .element {
+            height: 250px;
+            width: 250px;
+            margin-top: -40%;
+            margin-left: 10%;
+            background-color: lime;
+            animation-name: stretch;
+            animation-duration: 2.0s;
+            animation-timing-function: ease-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+
+        @keyframes stretch {
+            0% {
+                transform: scale(.5);
+                background-color: pink;
+                border-radius: 100%;
+            }
+
+            50% {
+                background-color: #4C0027;
+            }
+
+            100% {
+                transform: scale(2.0);
+                background-color: #980F5A;
+                border-radius: 100%;
+
+
+            }
+        }
+
+        body,
+        html {
+            height: 100%;
+
+        }
+
+        /* body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */
+    </style>
+
+<body >
+  <a href="index.html"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="50" height="65"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-1.91435,0.00025 -3.74903,0.76638 -5.09506,2.1276l-72.28255,63.07226c-0.9155,0.67554 -1.45577,1.74571 -1.45573,2.88347c0,1.97902 1.60431,3.58333 3.58333,3.58333h17.91667v57.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h28.66667c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-43h28.66667v43c0,3.956 3.21067,7.16667 7.16667,7.16667h28.66667c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-57.33333h17.91667c1.97902,0 3.58333,-1.60431 3.58333,-3.58333c0.00004,-1.13776 -0.54023,-2.20792 -1.45573,-2.88347l-72.24056,-63.03027c-0.01394,-0.01406 -0.02794,-0.02805 -0.04199,-0.04199c-1.34603,-1.36123 -3.18071,-2.12736 -5.09506,-2.1276z"></path></g></g></svg></a><!-- link the audio to the button-->
+
+ <svg xmlns="http://www.w3.org/2000/svg" id="button" onclick="myFunction()" viewBox="-4 -2 24 24" width="24" fill="currentColor"><path d="M12.253.335A10.086 10.086 0 0 0 8.768 8c0 4.632 3.068 8.528 7.232 9.665A9.555 9.555 0 0 1 9.742 20C4.362 20 0 15.523 0 10S4.362 0 9.742 0c.868 0 1.71.117 2.511.335z"></path>  </svg>
+
+    <audio id="cs_audio" controls>
+        <source src="Meditation-Audio.mp3" type="audio/mpeg">
+    </audio>
+    <div id="cs_audioplayer">
+        <span id="cs_audio_current_time">0:0</span></span>
+        <span id="cs_play_pause_btn">
+            <i class="far fa-play-circle" id="cs_audio_play"></i>
+            <i class="far fa-pause-circle" id="cs_audio_pause"></i>
+        </span>
+        <span id="cs_audio_sound">
+            <i style="vertical-align: middle;font-size: 1.14em;" class="fas fa-volume-down"></i>
+            <div class="cs_volBar">
+                <div class="cs_volume"></div>
+            </div>
+        </span>
+        <span id="cs_audio_duration"></span>
+        <div class="cs_audio_bar">
+            <div class="cs_audio_bar_now"></div>
+            <div class="cs_audio_bar_loaded"></div>
+        </div>
+<!-- bubble -->
+
+
+    <div class="element"></div>
+
+        <!-- pop up text -->
+
+    <p id="text1"> “My mind is brilliant. My body is healthy. My spirit is tranquil.” </p>
+
+
+<script src = "script.js" defer></script>
+
+</body>
+
+</html>
