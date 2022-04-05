@@ -264,6 +264,40 @@ function cspd_change_music(music) {
   }
 }
 
+//Triggers event in console.log at timestamp using interger value
+// function namedFunction(event) {
+//
+//   if (convert("0:3") < convert (timestamp())   && convert(timestamp()) < convert ("0:13" )){
+//
+//
+//     console.log("NIce")
+//   }
+//
+//
+//
+//     if (convert("0:23") < convert (timestamp())   && convert(timestamp()) < convert ("0:34" )){
+//     console.log("super  nic")
+//   }
+//
+//    if (convert("0:38") < convert (timestamp())   && convert(timestamp()) < convert ("1:03" )){
+//     console.log("super  bee")
+//   }
+//
+//
+//    if (convert("1:13") < convert (timestamp())   && convert(timestamp()) < convert ("1:20" )){
+//     console.log("super  thicc")
+//   }
+//
+//
+//  if (convert("1:25") < convert (timestamp())   && convert(timestamp()) < convert ("1:34" )){
+//     console.log("super  name")
+//   }
+//
+// }
+//
+// setInterval(namedFunction, 1000)
+//
+// console.log(document.getElementById("cs_audio_current_time"))
 // function fade() {
 //   if("cs_audio_current_time" > 60){
 // 	$('text1').fadeIn();
