@@ -134,6 +134,13 @@ top:10px;
   font-size: 35px;
 }
 
+#hicon{
+  color: white;
+  height: 50px;
+  width: 65px;
+
+  margin-top:2%;
+}
 
 
 /* progress bar */
