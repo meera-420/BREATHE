@@ -1,6 +1,6 @@
 # BREATHE
-A collaborative meditation website.
-README (Documentation):
+
+README
 Project Name:
 Breathe
 Project Description: what is the project, what is the overall concept and theme, and what kind of experience you were striving to create.
